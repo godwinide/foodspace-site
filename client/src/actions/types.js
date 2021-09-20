@@ -1,0 +1,26 @@
+// CUSTOMERS
+export const GET_CUSTOMERS = "GET_CUSTOMERS"
+
+// FOODS
+export const GET_FOODS = "GET_FOODS"
+
+// RESTAURANTS
+export const GET_RESTAURANTS = "GET_RESTAURANTS"
+
+// RIDERS
+export const GET_RIDERS = "GET_RIDERS"
+
+// CATEGORIES
+export const GET_CATEGORIES = "GET_CATEGORIES"
+
+// ORDERS
+export const GET_ORDERS = "GET_ORDERS"
+
+// AUTH
+export const USER_LOADING = "USER_LOADING"
+export const USER_LOADED = "USER_LOADED"
+export const AUTH_ERROR = "AUTH_ERROR"
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS"
+export const LOGIN_FAIL = "LOGIN_FAIL"
+export const LOGOUT_SUCCESS = "LOGOUT_SUCCESS"
+

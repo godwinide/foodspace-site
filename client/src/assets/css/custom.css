@@ -1,0 +1,8 @@
+table tr:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.678);
+    color: #fff;
+}
+table tr:nth-child(even) a{
+    color: #fff !important;
+}
+

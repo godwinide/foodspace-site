@@ -1,0 +1,10 @@
+table tr:nth-child(even){
+    margin-bottom: 1em !important;
+    background-color: rgb(33, 31, 34);
+    color: #fff !important;
+}
+
+table tr th,
+table tr td{
+    white-space: nowrap;
+}
