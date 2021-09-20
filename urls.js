@@ -1,3 +1,5 @@
+import path from 'path'
+
 module.exports = app => {
     // CUSTOMERS
     app.use("/api/customers/auth", require("./routes/api/customers/auth/index"));
