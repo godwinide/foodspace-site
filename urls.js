@@ -27,5 +27,10 @@ module.exports = app => {
     app.use("/api/admin/riders", require("./routes/api/admin/riders/index"));
     app.use("/api/admin/auth", require("./routes/api/admin/auth/index"))
     app.use("/api/admin/notification", require("./routes/api/admin/notification/index"));
+
+    // BUILD
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    });
     
 }
