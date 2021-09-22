@@ -29,7 +29,7 @@ const AddFood = (props) =>{
     const [standardPrice,setStandardPrice] = useState("");
     const [name, setName] = useState("");
     const [description, setDescription] = useState("");
-    const [vendor, setVendor] = useState(props.restaurants[0]._id)
+    const [vendor, setVendor] = useState(props.restaurants[0]?._id || "")
     const [vendor_name, setVendorName] = useState(props.restaurants[0]?.name || "")
     const [category, setCategory] = useState(props.categories[0]?._id || "")
     const [category_name, setCategoryName] = useState(props.categories[0]?.name || "")
@@ -262,8 +262,16 @@ const AddFood = (props) =>{
                             >
                                 Creating, please wait..
                             </Button>
-                            :<Button
+                            :vendor_name ?
+                            <Button
                             onClick={handleCreate}
+                            className="btn"
+                            color="success"
+                            type="button"
+                            >
+                                Create
+                            </Button>
+                            :<Button
                             className="btn"
                             color="success"
                             type="button"
