@@ -30,9 +30,9 @@ const AddFood = (props) =>{
     const [name, setName] = useState("");
     const [description, setDescription] = useState("");
     const [vendor, setVendor] = useState(props.restaurants[0]._id)
-    const [vendor_name, setVendorName] = useState(props.restaurants[0].name)
-    const [category, setCategory] = useState(props.categories[0]._id)
-    const [category_name, setCategoryName] = useState(props.categories[0].name)
+    const [vendor_name, setVendorName] = useState(props.restaurants[0]?.name || "")
+    const [category, setCategory] = useState(props.categories[0]?._id || "")
+    const [category_name, setCategoryName] = useState(props.categories[0]?.name || "")
     const [is_visible, setVisible] = useState(false);
     const [is_special, setIsSpecial] = useState(false);
     const [image, setImage] = useState(null);
