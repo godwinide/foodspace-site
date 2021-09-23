@@ -10,6 +10,7 @@ router.post("/all", auth, async(req,res) => {
             notifications
         });
     }catch(err){
+        console.log(err);
         res.status(500).json({
             msg: "internal server error."
         })
