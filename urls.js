@@ -9,6 +9,7 @@ module.exports = app => {
     app.use("/api/customers/foods", require("./routes/api/customers/foods/index"));
     app.use("/api/customers/foods/order", require("./routes/api/customers/orders/order"));
     app.use("/api/customers/foods/category", require("./routes/api/customers/foods/category"));
+    app.use("/api/customers/notifications", require("./routes/api/customers/notification/index"));
 
     // VENDOR
     app.use("/api/vendors/auth", require("./routes/api/vendors/auth/index"));
