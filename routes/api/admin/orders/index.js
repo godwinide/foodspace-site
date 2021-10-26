@@ -57,8 +57,8 @@ router.post("/updateStatus", async(req,res) => {
             });
         }
         const notification = new Notification({
-            title: `Your order ${order.short_id} status`,
-            message: `your order is ${status}. Thanks.`,
+            title: `Order ${order.short_id} status`,
+            message: `Your order is ${status}.`,
             channelId: 'food-space-app',
             clientId: order.customer_id
         });

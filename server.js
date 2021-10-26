@@ -9,11 +9,11 @@ require("dotenv").config();
 // mongodb
 require("./config/mongoDB")();
 
+app.use(cors());
 
 // MIDDLEWARES
 app.use(fileUpload());
 app.use(express.static("./public"))
-app.use(cors())
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.static("./client/build"))
